@@ -11,3 +11,304 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.page{
+  position:absolute;
+  top : 0;
+  bottom: 0;
+  width: 100%;
+  /* max-width: 500px; */
+  padding: 0 20px;
+  left: 50%;
+  transform: translate(-50%,0);
+
+  background-color: #f7f7f7;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleWrap{
+  margin-top: 87px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #262626;
+}
+
+.contentWrap{
+  margin-top: 26px;
+  flex :1;
+}
+.inputTitle{
+  font-size: 12px;
+  font-weight: 600;
+  color:#262626;
+
+}
+.inputWrap{
+  display: flex;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 8px;
+  background-color: #FFFFFF;
+  border: 1px solid #e2e0e0;
+
+}
+
+.inputWrap:focus-within{
+  border: 1px solid #91c1ac;
+
+}
+
+.input{
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.input::placeholder{
+  color: #dadada;
+}
+
+.errorMessageWrap{
+  margin-top: 8px;
+  font-size: 12px;
+  color : #ef0000;
+}
+
+.bottomButton{
+  width: 100%;
+  height: 48px;
+  border: none;
+  font-weight: 700;
+  background-color: #91c1ac;
+  border-radius: 64px;
+  color: white;
+  margin-bottom: 16px;
+  cursor: pointer;
+
+}
+
+.bottomButton:disabled{
+  background-color: #dadada;
+  color:white;
+}
+
+.level {
+  margin-top: 10px;
+  text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.ranking_title {
+  display: flex;  /* flexbox 사용 */
+  align-items: center;  /* 자식 요소들을 수직으로 가운데 정렬 */
+  justify-content: center; /* 자식 요소들을 수평으로 가운데 정렬 */
+  padding: 10px; /* 패딩 추가 */
+  background-color: #f8f9fa; /* 배경색 지정 */
+}
+
+.ranking_text {
+  font-size: 20px; /* 글자 크기 지정 */
+  font-weight: bold; /* 글자 두껍게 */
+}
+
+.trophy {
+  width: 30px; /* 트로피 아이콘의 너비 */
+  height: 30px; /* 트로피 아이콘의 높이 */
+  background-image: url("../public/image/trophy.png");/* 트로피 이미지의 URL을 설정하세요. */
+  background-repeat: no-repeat;
+  background-size: cover; /* 이미지 크기 조절 */
+  margin-left: 10px; /* 트로피 이미지와 텍스트 사이에 여백 추가 */
+}
+
+.problem_page {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  margin: 12px;
+  
+}
+.problem_area {
+  overflow: auto;
+ 
+  width: 50px;
+  background-color: #f9f9f9;
+  height: 100vh;
+  flex: 1 0 auto;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  flex-direction: column;
+  
+}
+
+.problem_title {
+
+  font-family: Inter;
+  font-size: 2rem;
+  text-align: left;
+  color: #263238;
+  padding: 1rem;
+  font-weight: 600;
+}
+.provlem_content {
+  font-family: Inter;
+  /* font-size: 1rem; */
+  padding: 1rem;
+  font-size: 1.3rem;
+  /* height: 15rem; */
+  font-weight: normal;
+  text-align: left;
+  color: #263238;
+  margin-top:1rem;
+}
+
+.io_example_area{
+  font-family: Inter;
+  background-color: #f9f9f9;
+  /* font-size: 1rem; */
+  padding: 1rem;
+  font-size: 1rem;
+  /* height: 15rem; */
+  font-weight: normal;
+  text-align: left;
+  color: #263238;
+  margin-top:1rem;
+}
+.io_example {
+  height: 7.938rem;
+}
+
+.midline {
+  margin-left: 16px;
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+
+.answer_area {
+  flex: 2.5 0 auto;
+  flex-direction: column;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.answer_section {
+  display: flex;
+  flex: 2.5 0 auto;
+  margin-left: 10px;
+  
+  
+  flex-direction: column;
+}
+.problem_id_title{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.my-button {
+  width: 100px; /* 자동 너비 설정 */
+  height: auto; /* 자동 높이 설정 */
+  padding: 10px 20px; /* 패딩을 통해 버튼 내부 텍스트와의 간격 설정 */
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.submit-button{
+  align-items: end;
+  width: 100px; /* 자동 너비 설정 */
+  height: auto; /* 자동 높이 설정 */
+  padding: 10px 20px; /* 패딩을 통해 버튼 내부 텍스트와의 간격 설정 */
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.answer_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.answer_input {
+  width: 100%; /* You can adjust this */
+  height: 95%; /* You can adjust this */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none; /* This disables user resizing of the textarea */
+}
+
+.answer_areas {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.image-container {
+  transform: rotate(20deg);
+}
+.image-container2 {
+  transform: rotate(150deg);
+}
+
+.btn {
+  width: auto; 
+  height: auto;
+  margin: 0 0 8px 0;
+  /* 기존의 다른 스타일... */
+}
+
+.btn2 {
+  width: auto; 
+  height: auto;
+  margin: 0 0 8px 20px;
+  /* 기존의 다른 스타일... */
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #ef0000;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #91c1ac;
+}
+
+.table-cell-padding {
+  padding-left: 200px;
+  background-color: #b2dfdb;
+}
+.mint{
+  background: #b2dfdb;
+  background-color: #b2dfdb;
+}
+
+.left-align-button {
+  float: left;
+}
+
+.right-align-button {
+  float: right;
+}
+
+.answer_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px; /* This will give space between buttons */
+}
